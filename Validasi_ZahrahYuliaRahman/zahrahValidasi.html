@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Pendaftaran</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <form id="registrationForm" novalidate>
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" placeholder="Masukan Nama Lengkap" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="📧example@gmail.com" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="phone">Nomor HP</label>
+      <input type="tel" id="phone" placeholder="📞08xx (angka semua)"  required>
+      <small class="error" id="phoneError"></small>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="🔐Kata Sandi" required>
+      <small class="error" id="passwordError"></small>
+
+      <label for="confirmPassword">Konfirmasi Password</label>
+      <input type="password" id="confirmPassword" placeholder="Konfirmasi Kata Sandi" required>
+      <small class="error" id="confirmPasswordError"></small>
+
+      <!-- <button type="submit">Daftar</button> -->
+      <button type="submit" id="showSuccessSwal">Daftar</button>
+      <div id="message"></div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  <script src="js/script.js"></script>
+</body>
+</html>
